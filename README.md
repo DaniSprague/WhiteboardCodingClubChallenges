@@ -1,0 +1,1 @@
+Dani Sprague's solutions to [the WWU WhiteboardCoder's Club Monthly Challenges](https://whiteboardcoders.com/coding-challenges).
