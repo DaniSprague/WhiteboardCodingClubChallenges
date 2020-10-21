@@ -6,11 +6,20 @@ Date: 2020-10-20
 A submission for the first WWU WBC challenge.
 """
 
-import sys
+import collections
 
-def main(args):
-    return None
+def main():
+    diffs = list()
+    with open('WBC_CodingChallenge1_Input.txt') as f:
+        for number, line in enumerate(f):
+            line = line.replace(' ', '')
+            name, attributes = line.split('|')
+            max_name = collections.Counter(name).most_common(1)[0][1]
+            max_attr = collections.Counter(attributes).most_common(1)[0][1]
+            diffs.append((abs(max_name - max_attr), number))
+    diffs.sort()
+    max1, max2 = diffs[len(diffs)-1]
+    print(f"{max1}, {max2}")
 
 if __name__ == "__main__":
-    # Change to 1: if arguments are actually expected
-    main(sys.argv[0:])
+    main()
