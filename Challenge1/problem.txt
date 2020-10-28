@@ -1,0 +1,17 @@
+Given a list of animals each with an accompanying attribute, return the maximum difference of repeating characters between the animal name and the animal attribute and the line number in the input file where it occurs. Each animal name and animal attribute will be seperated by a '|' character. Here are some examples of how this can be computed:
+
+
+Examples:
+1.) Input: "kyle chinchilla|pink hair with blue eyes"
+    Animal name: "kyle chinchilla", Animal attribute: "pink hair with blue eyes"
+    Repeating character difference: abs(3 - 3) = 0 
+    Explanation: Animal name has 3 'l' characters, Animal attribute has 3 'i' & 'e' characters. 
+                 Take the absolute difference between the maximum number repeated characters for both components.
+
+2.) Input: "mary hyena|short beard with blue eyes"
+    Animal name: "mary hyena", Animal attribute: "short beard with blue eyes"
+    Repeating character difference: abs(2 - 4) = 2 
+    Explanation: Animal name has 2 'y' & 'a' characters, Animal attribute has 4 'e' characters. 
+                 Take the absolute difference between the maximum number repeated characters for both components.
+
+Example Program Output: "4, 1250" (Max absolute difference, line where max absolute difference occurs)
