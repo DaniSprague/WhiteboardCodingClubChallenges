@@ -1,0 +1,30 @@
+The problem you’re going to be solving, is to write a program that can calculate the total number of triangles and the ratio of side lengths from various steps of a Sierpinski Triangle.
+
+Those of you that know what a Triforce is, congrats! You’ve seen the second step of a Sierpinski Triangle. The idea behind this triangle is recursion, each triangle will get another triangle inside of it, where the vertices meet the half point of its predecessor’s side length. And obviously the cycle continues to the point where we can’t see the triangles being made.
+
+Note
+We are using a variation of the Sierpinski Triangle where the middle section is not deleted. This means that:
+At step 0, there is only 1 triangle
+At step 1, there are 5 triangles
+At step 2, there are 17 triangles
+At step 3, there are 53 triangles
+and so on.
+
+Problems
+Calculate the ratio of side lengths given two levels. Format in txt file is “R 2 13”,
+Calculate the total number of triangles at any given level. Format in txt file is “N 67”
+You will be given a file called “questions.txt”, one question per line, of the 2 formats mentioned above. Read the file, solve the problem, and write the solutions to a file named “solutions.txt”, for ease of grading, write each solution to its own line, as well as match the solution line to the question line, so it’s not a huge mess of numbers. Your starting triangle will be equilateral.
+
+You should implement the function which counts the total number of triangles recursively. Whether or not you decide to implement the ratio function recursively is up to you!
+
+Examples:
+1.) Input: "N 6"
+    Output: "1457"
+
+2.) Input: "R 2 13"
+    Output: "2048:1"
+
+3.) Input: "R 12 12"
+    Output: "1:1"
+
+Input file can be downloaded here (https://whiteboardcoders.com/coding-challenges/two/questions.txt), open and save from your browser.
