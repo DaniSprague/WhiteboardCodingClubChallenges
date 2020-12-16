@@ -4,3 +4,4 @@ Dani Sprague's solutions to [the WWU Whiteboard Coder's Club Monthly Challenges]
 
 - **Challenge #1**: 1st Place
 - **Challenge #2**: 1st Place
+- **Challenge #3**: TBD
